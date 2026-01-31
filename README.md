@@ -1,3 +1,3 @@
 # BAC-test
 
-- For test APIs in bilibili-API-collect
+- For test APIs for bilibili
